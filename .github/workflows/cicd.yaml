@@ -8,4 +8,4 @@ jobs:
       - name: Run normal CI
         run: |
           echo "${{ github.event.head_commit.message }}"
-          echo "done"
+          echo "${{ github.event }}"
