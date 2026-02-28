@@ -6,4 +6,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Run normal CI
-        run: echo hello
+        run: echo "${{ github.event.pull_request.title }}"
