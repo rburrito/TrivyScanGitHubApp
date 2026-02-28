@@ -1,0 +1,9 @@
+name: Run CI
+on: [push, pull_request]
+
+jobs:
+  normal_ci:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run normal CI
+        run: echo hello
